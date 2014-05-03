@@ -1,0 +1,16 @@
+{
+  "name": "AO-stats-server",
+  "version": "0.0.0",
+  "description": "statistical and user usage backend of AO",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "express": "^4.1.1",
+    "mongodb": "^1.4.2",
+    "morgan": "^1.0.0",
+    "body-parser": "^1.0.2"
+  }
+}
