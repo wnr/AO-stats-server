@@ -1,3 +1,9 @@
+process.on('uncaughtException', function (err) {
+	console.error('uncaughtException:', err.message)
+	console.error(err.stack)
+	process.exit(1)
+});
+
 var express = require("express");
 var morgan = require("morgan");
 var bodyParser = require("body-parser");
