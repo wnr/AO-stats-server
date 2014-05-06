@@ -50,6 +50,8 @@ app.post("/actions", function(req, res) {
 		return error(res, "Invalid outcome");
 	}
 
+	action.date = new Date();
+
 	console.log("Adding action: " + JSON.stringify(action));
 
 	db.collection("actions", function(err, collection) {
