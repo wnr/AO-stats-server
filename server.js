@@ -42,12 +42,12 @@ app.post("/actions", function(req, res) {
 		return error(res, "Invalid state");
 	}
 
-	if(!action.event) {
-		return error(res, "Invalid event");
+	if(!action.trigger) {
+		return error(res, "Invalid trigger");
 	}
 
-	if(!action.outcome) {
-		return error(res, "Invalid outcome");
+	if(!action.event) {
+		return error(res, "Invalid event");
 	}
 
 	action.date = new Date();
