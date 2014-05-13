@@ -37,7 +37,7 @@ function analyze(collection, done) {
 	var analyzers = [
 		analyzePowerups,
 		analyzeKeybindnings.bind(null, "-- Keybindings changed to --", "changed_to_left_key_binding", "changed_to_right_key_binding"),
-		analyzeKeybindnings.bind(null, "-- Keybindings changed from --", "change_from_left_key_binding", "change_from_left_key_binding"),
+		analyzeKeybindnings.bind(null, "-- Keybindings changed from --", "change_from_left_key_binding", "change_from_right_key_binding"),
 		analyzeIllegalKeybindings,
 		analyzeSettings
 	];
